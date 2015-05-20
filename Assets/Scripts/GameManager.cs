@@ -1,13 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameManager : MonoBehaviour {
-
-	[SerializeField]
-	private GUIText timeText = null;
-	[SerializeField]
-	private GUIText endText = null;
-
+public class SceneManager : MonoBehaviour {
 
 	void Start ()
 	{
