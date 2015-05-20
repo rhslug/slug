@@ -64,7 +64,9 @@
      <Compile Include="Assets\Scripts\ExplosionManager.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GameParameters.cs" />
+     <Compile Include="Assets\Scripts\SlugMaker.cs" />
      <Compile Include="Assets\Scripts\SlugMovements.cs" />
+     <Compile Include="Assets\rend.cs" />
      <None Include="Assets\Cardboard\Legacy\Resources\SkyboxMesh.shader" />
      <None Include="Assets\Cardboard\Legacy\Resources\GUIScreen.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
