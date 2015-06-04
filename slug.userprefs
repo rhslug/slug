@@ -1,8 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SlugMovement.cs">
     <Files>
+<<<<<<< HEAD
       <File FileName="Assets/Scripts/GameManager.cs" Line="14" Column="1" />
+=======
+      <File FileName="Assets\Scripts\SlugMovement.cs" Line="19" Column="1" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="15" Column="3" />
+>>>>>>> anime
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

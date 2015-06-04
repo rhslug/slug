@@ -1,0 +1,18 @@
+Library/
+Temp/
+db
+ *.csproj
+  *.unityproj
+   *.sln
+    *.userprefs
+     [Bb]uilds/
+      
+       #######
+        # Git
+	 ######
+	  *.orig
+	   *.orig.meta
+	    *.BASE.*
+	     *.LOCAL.*
+	      *.REMOTE.*
+	       *.MERGED.*Library/
