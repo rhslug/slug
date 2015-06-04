@@ -1,22 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SlugMovement.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
     <Files>
-<<<<<<< HEAD
-      <File FileName="Assets/Scripts/GameManager.cs" Line="14" Column="1" />
-=======
-      <File FileName="Assets\Scripts\SlugMovement.cs" Line="19" Column="1" />
-      <File FileName="Assets\Scripts\GameManager.cs" Line="15" Column="3" />
->>>>>>> anime
+      <File FileName="Assets/Scripts/GameManager.cs" Line="19" Column="2" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-      <Pad Id="ClassPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
