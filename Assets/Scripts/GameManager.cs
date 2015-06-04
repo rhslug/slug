@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
 	void Start ()
 	{
 		//GameParameters.GetInstance().InitializeGame();
+		Cardboard.SDK.Recenter ();
 
 	}
 
