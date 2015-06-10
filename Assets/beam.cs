@@ -27,8 +27,8 @@ public class beam : MonoBehaviour {
 				line.enabled = true;
 				Ray ray = head.Gaze;
 				RaycastHit hit;
-				line.SetPosition (0, ray.origin);
-				line.SetPosition (1, ray.direction);
+				line.SetPosition (0, this.transform.position);
+				line.SetPosition (1, ray.GetPoint(100));
 
 		/*
 				if (Physics.Raycast (ray, out hit, 100)) {
