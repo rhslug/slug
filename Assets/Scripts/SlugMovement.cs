@@ -9,10 +9,12 @@ public class SlugMovement : MonoBehaviour {
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
 		nav = GetComponent <NavMeshAgent> ();
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		
 		nav.SetDestination (player.position);
 	}
 }
