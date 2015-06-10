@@ -13,6 +13,6 @@ public class SlugMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		nav.SetDestination (player.position);
+		nav.SetDestination (player.position);s
 	}
 }
