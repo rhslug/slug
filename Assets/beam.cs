@@ -4,6 +4,8 @@ using System.Collections;
 public class beam : MonoBehaviour {
 	LineRenderer line;
 	CardboardHead head;
+
+	public GameObject slug;
 	// Use this for initialization
 	void Start () {
 		Cardboard.SDK.TapIsTrigger = true;
@@ -12,6 +14,7 @@ public class beam : MonoBehaviour {
 		line.enabled = false;
 		head = Camera.main.GetComponent<StereoController>().Head;
 		line.material = new Material (Shader.Find("Particles/Additive"));
+		//slug = GameObject.Find ("Slug").transform;
 	}
 	
 	// Update is called once per frame
@@ -31,16 +34,12 @@ public class beam : MonoBehaviour {
 				line.SetPosition (0, this.transform.position);
 				line.SetPosition (1, ray.GetPoint(100));
 
-		/*
-				if (Physics.Raycast (ray, out hit, 100)) {
-						line.SetPosition (1, hit.point);
-						if (hit.rigidbody) {
-								hit.rigidbody.AddForceAtPosition (transform.forward_ * 10, hit.point);
+				if (Physics.Raycast (ray, out hit)) {
+						if (hit.collider.gameObject.name.Equals("Slug")) {
+							Destroy(hit.collider.gameObject);
 						}
-				} else
-						line.SetPosition (1, ray.GetPoint (100));
-
-*/
+				}
+	
 				yield return null;
 
 				line.enabled = false;
