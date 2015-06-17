@@ -11,7 +11,7 @@ public class beam : MonoBehaviour {
 		line = GetComponent<LineRenderer>();
 		line.enabled = false;
 		head = Camera.main.GetComponent<StereoController>().Head;
-
+		line.material = new Material (Shader.Find("Particles/Additive"));
 	}
 	
 	// Update is called once per frame
@@ -27,6 +27,7 @@ public class beam : MonoBehaviour {
 				line.enabled = true;
 				Ray ray = head.Gaze;
 				RaycastHit hit;
+				
 				line.SetPosition (0, this.transform.position);
 				line.SetPosition (1, ray.GetPoint(100));
 
