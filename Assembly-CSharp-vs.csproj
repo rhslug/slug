@@ -62,7 +62,9 @@
      <Compile Include="Assets\Cardboard\Scripts\StereoController.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\SlugMaker.cs" />
+     <Compile Include="Assets\Scripts\SlugManager.cs" />
      <Compile Include="Assets\Scripts\SlugMovement.cs" />
+     <Compile Include="Assets\Scripts\click.cs" />
      <Compile Include="Assets\beam.cs" />
      <Compile Include="Assets\rend.cs" />
      <None Include="Assets\Cardboard\Legacy\Resources\SkyboxMesh.shader" />
