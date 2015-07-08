@@ -13,4 +13,10 @@ public class startManager : MonoBehaviour {
 		Application.LoadLevel ("game");
 }
 
+
+
+	public void quit(){
+		Application.Quit ();
+}
+
 }
