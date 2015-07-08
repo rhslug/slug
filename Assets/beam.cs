@@ -1,9 +1,12 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
+
 
 public class beam : MonoBehaviour {
 	LineRenderer line;
 	CardboardHead head;
+
+	AudioSource playerAudio;
 
 	public GameObject slug;
 	// Use this for initialization
@@ -14,6 +17,7 @@ public class beam : MonoBehaviour {
 		line.enabled = false;
 		head = Camera.main.GetComponent<StereoController>().Head;
 		line.material = new Material (Shader.Find("Particles/Additive"));
+		playerAudio = GetComponent <AudioSource> ();
 		//slug = GameObject.Find ("Slug").transform;
 	}
 	
@@ -23,6 +27,7 @@ public class beam : MonoBehaviour {
 			print (Cardboard.SDK.HeadRotation);
 			StopCoroutine("fire");
 			StartCoroutine("fire");
+			playerAudio.Play();
 		}
 	}
 
