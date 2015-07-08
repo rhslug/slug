@@ -20,6 +20,7 @@ public class makeSlug : MonoBehaviour {
 			s = Instantiate(Slug, new Vector3(-35+(r-2)*70, 3, 35), Quaternion.identity) as GameObject;
 		if(r >= 3 && r <= 4)
 			s = Instantiate(Slug, new Vector3(-35+(r-3)*70, 3, -35), Quaternion.identity) as GameObject;
+
 	}
 	
 	// Update is called once per frame
