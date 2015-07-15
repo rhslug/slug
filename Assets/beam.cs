@@ -40,7 +40,9 @@ public class beam : MonoBehaviour {
 				line.SetPosition (1, ray.GetPoint(100));
 
 				if (Physics.Raycast (ray, out hit)) {
-			if (hit.collider.gameObject.name.Equals("Slug") || hit.collider.gameObject.name.Equals("Slug(Clone)")) {
+					if (hit.collider.gameObject.name.Equals("Slug") || hit.collider.gameObject.name.Equals("Slug(Clone)")) {
+							GameObject.Find("GameManager").GetComponent<global>().score += 1;			
+							Debug.Log(GameObject.Find("GameManager").GetComponent<global>().score);
 							Destroy(hit.collider.gameObject);
 						}
 				}
