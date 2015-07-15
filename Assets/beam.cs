@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 
 public class beam : MonoBehaviour {
 	LineRenderer line;
 	CardboardHead head;
-
+	public Text gui;
 	AudioSource playerAudio;
 
 	public GameObject slug;
@@ -44,6 +45,7 @@ public class beam : MonoBehaviour {
 							GameObject.Find("GameManager").GetComponent<global>().score += 1;			
 							Debug.Log(GameObject.Find("GameManager").GetComponent<global>().score);
 							Destroy(hit.collider.gameObject);
+				gui.GetComponent<Text>().text=GameObject.Find("GameManager").GetComponent<global>().score+"";
 						}
 				}
 	
