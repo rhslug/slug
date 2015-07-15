@@ -5,8 +5,12 @@ public class makeSlug : MonoBehaviour {
 
 	public GameObject Slug;
 	// Use this for initialization
-	void Start () {
+	void startSpawn() {
 		InvokeRepeating("spawn", 1, 1);
+	}
+
+	void Start () {
+
 	}
 
 	void spawn () {

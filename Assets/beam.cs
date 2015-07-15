@@ -24,10 +24,14 @@ public class beam : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Cardboard.SDK.CardboardTriggered) {
-			print (Cardboard.SDK.HeadRotation);
-			StopCoroutine("fire");
-			StartCoroutine("fire");
-			playerAudio.Play();
+			if(GameObject.Find("GameManager").GetComponent<global>().gameStarted) {
+				StopCoroutine("fire");
+				StartCoroutine("fire");
+				playerAudio.Play();
+			} else {
+				GameObject.Find("GameManager").GetComponent<global>().gameStarted = true;
+				print("gameStart");
+			}
 		}
 	}
 
