@@ -51,7 +51,6 @@ public class beam : MonoBehaviour {
 								blinkColor.a = 1;
 
 						gui.GetComponent<Text> ().color = blinkColor;
-						Debug.Log (blinks);
 				} else {
 						blinkColor.a = 0;
 						ScoreColor.a = 1;
@@ -67,6 +66,7 @@ public class beam : MonoBehaviour {
 				playerAudio.Play();
 			} else {
 				GameObject.Find("GameManager").GetComponent<global>().gameStarted = true;
+				GameObject.Find("SlugMaker").GetComponent<makeSlug>().startSpawn();
 				nowPlaying = true;
 				print("gameStart");
 			}
@@ -83,7 +83,9 @@ public class beam : MonoBehaviour {
 
 				if (Physics.Raycast (ray, out hit)) {
 					if (hit.collider.gameObject.name.Equals("Slug") || hit.collider.gameObject.name.Equals("Slug(Clone)")) {
-							GameObject.Find("GameManager").GetComponent<global>().score += 1;			
+							GameObject.Find("GameManager").GetComponent<global>().score += 1;
+							if(GameObject.Find("SlugMaker").GetComponent<makeSlug>().interval > 1)
+								GameObject.Find("SlugMaker").GetComponent<makeSlug>().interval -= 0.025f;
 							Debug.Log(GameObject.Find("GameManager").GetComponent<global>().score);
 							Destroy(hit.collider.gameObject);
 				score.GetComponent<Text>().text = "Score : " + GameObject.Find("GameManager").GetComponent<global>().score;

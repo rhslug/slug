@@ -4,9 +4,10 @@ using System.Collections;
 public class makeSlug : MonoBehaviour {
 
 	public GameObject Slug;
+	public float interval = 3f;
 	// Use this for initialization
-	void startSpawn() {
-		InvokeRepeating("spawn", 1, 1);
+	public void startSpawn() {
+		Invoke("spawn", 3);
 	}
 
 	void Start () {
@@ -14,6 +15,8 @@ public class makeSlug : MonoBehaviour {
 	}
 
 	void spawn () {
+		Debug.Log("S");
+		Invoke ("spawn", interval);
 		float r = Random.Range(0F, 4F);
 		GameObject s;
 		if(r >= 0 && r < 1)
