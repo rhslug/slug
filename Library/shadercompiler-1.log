@@ -1,3 +1,11 @@
 Base path: D:/Program Files (x86)/Unity/Dditor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-1-5576
+Pipe name: \\.\pipe\UnityShaderCompiler-1-3184
 Cmd: getPlatforms
+Cmd: preprocess
+  insize=2788 outsize=914 ok=1
+Cmd: preprocess
+  insize=976 outsize=973 ok=1
+Cmd: preprocess
+  insize=793 outsize=790 ok=1
+Cmd: preprocess
+  insize=1382 outsize=1379 ok=1

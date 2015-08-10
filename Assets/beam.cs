@@ -14,6 +14,7 @@ public class beam : MonoBehaviour {
 	Color blinkColor;
 	Color ScoreColor;
 
+
 	//public GameObject slug;
 	// Use this for initialization
 	void Start () {
@@ -35,6 +36,9 @@ public class beam : MonoBehaviour {
 		ScoreColor.b = 20;
 		ScoreColor.a = 0;
 	}
+
+
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -48,12 +52,12 @@ public class beam : MonoBehaviour {
 
 						gui.GetComponent<Text> ().color = blinkColor;
 						Debug.Log (blinks);
+				} else {
+						blinkColor.a = 0;
+						ScoreColor.a = 1;
+						gui.GetComponent<Text> ().color = blinkColor;
+						score.GetComponent<Text> ().color = ScoreColor;
 				}
-		else
-		blinkColor.a = 0;
-		ScoreColor.a = 1;
-		gui.GetComponent<Text>().color = blinkColor;
-		score.GetComponent<Text> ().color = ScoreColor;
 		
 
 		if (Cardboard.SDK.CardboardTriggered) {
